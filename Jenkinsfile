@@ -1,7 +1,8 @@
 pipeline {
  agent any // Use any available agent
  tools {
- maven 'Maven' // Ensure this matches the name
+ maven 'Maven'
+  jdk 'jdk'
 configured inJenkins
  }
  stages {
