@@ -7,7 +7,7 @@ configured inJenkins
  stages {
  stage('Checkout') {
  steps {
- git branch: 'master', url: '<repo link>'
+ git branch: 'master', url: 'https://github.com/omkarmaha1620-collab/mvn-last'
  }
  }
  stage('Build') {
@@ -26,7 +26,7 @@ configured inJenkins
  stage('Run Application') {
  steps {
  // Start the JAR application
- sh 'java -jar target/MyMavenApp-1.0-SNAPSHOT.jar'
+ sh 'java -jar target/mvn-last-1.0-SNAPSHOT.jar'
  }
  }
 
