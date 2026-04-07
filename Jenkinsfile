@@ -3,7 +3,7 @@ pipeline {
  tools {
  maven 'Maven'
   jdk 'jdk'
-configured inJenkins
+
  }
  stages {
  stage('Checkout') {
